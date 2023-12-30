@@ -1,0 +1,11 @@
+.search{
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between; 
+}
+/* Search.css */
+
+.searchIcon:hover {
+    color: cement; /* Add the desired color for hover state */
+  }
+  

@@ -1,0 +1,263 @@
+/* 
+.template{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+}
+
+.poster{
+    border-radius: 10px;
+    width: 50%;
+    
+}
+.title{
+    margin: 5px;
+text-align: center;
+}
+.subtitle{
+    color: black;
+    padding: 2px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2px;
+
+}
+/* @media (max-width: 550px) {
+    .template {
+      width: 46%;
+    }
+  }  */
+  /* .content-container {
+    position: relative;
+    transition: background-color 0.3s ease;
+  }
+   
+  .content-container:hover {
+    background-color: white;
+  }
+  .badge-container {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+  .content-container {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+flex-direction: column;
+  } */
+  /* .template {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    align-items: center;
+    text-align: center;
+    margin: 20px 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .poster {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .badge {
+    position: sticky;
+    top: 10px; 
+    left: 90px;
+    z-index: 1;
+  }
+  
+  .subTitle {
+    font-size: 1rem;
+    color: #555;
+  }
+  .template:hover {
+    background-color: white;
+    color: black;
+  }
+  .MuiBackdrop-root {
+    z-index: 0; 
+  }
+  
+  .MuiDialog-root {
+    z-index: 1; 
+  }
+ 
+.MuiBackdrop-root {
+  z-index: 0;
+}
+
+.MuiDialog-root {
+  z-index: 1;
+}
+
+ 
+   */
+   /* .content-container {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  
+    &:hover {
+      transform: scale(1.05);
+    }
+  
+    .badge-container {
+      position: absolute;
+      top: 10px;
+      z-index: 1; 
+      left: 10px;
+    }
+  
+    .poster {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  
+    .modalPoster {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  
+    .details {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      color: #888;
+    }
+  }
+   */
+   .content-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    cursor: pointer;
+    width: 250px;
+    transition: transform 0.2s ease-in-out;
+    margin: 10px ;
+  
+    &:hover {
+      transform: scale(1.05);
+    }
+  .badge{
+    right: 50px;
+  }
+    .badge-container {
+      position: absolute;
+      top: -5px;
+      left: 235px;
+      z-index: 1; /* Ensure the badge appears above the content */
+    }
+  
+    .poster {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  
+    .modalPoster {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  
+    .details {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      color: #888;
+    }
+  
+    .subs {
+      display: block;
+      margin-top: 5px;
+    }
+  }
+  .content-container:hover .poster {
+    outline: 3px solid white;
+  }
+  .watch-trailer-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #2196F3;
+    color: #fff;
+    border: 2px solid #2196F3;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .watch-trailer-button:hover {
+    background-color: #fff;
+    color: #2196F3;
+  }
+ /* Singlepage.css */
+
+.content-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.hovered-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.details-container {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.date,
+.genre {
+  font-size: 14px;
+}
+
+.watch-trailer-button {
+  cursor: pointer;
+  background-color: #f50057;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 85px;
+
+}
+
+
+.content-container.hovered {
+  border-color: black; /* Change the border color to white when hovered */
+}

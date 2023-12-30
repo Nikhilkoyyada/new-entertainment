@@ -1,0 +1,25 @@
+.trending{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/* Add this to your Singlepage.css file */
+.MuiBackdrop-root {
+    z-index: 0; /* Ensure it's below the modal content */
+  }
+  
+  .MuiDialog-root {
+    z-index: 1; /* Ensure it's above the backdrop */
+  }
+  .pageTitle {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2vw;
+    padding: 4px;
+    border-radius: 50px;
+    color: white;
+    margin-bottom: 6px;
+  }
+  
